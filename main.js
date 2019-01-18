@@ -15,7 +15,10 @@ else {
 // 2. Condition
 // 3. Post Loop Action 
 for(var i = 0; i < x; i++) {
-    console.log(i);
+   
+    if(i % 2 === 0){
+        console.log(i);
+    }
 
 }
 
@@ -27,11 +30,14 @@ if(x % 2 === 0) {
     sayHello();
 }
 
+// eslint-disable-next-Line
 function evenOrOdd(){
 
-    var y = 4; 
+    var input = document.getElementById('number');
+    
+    var y = input.nodeValue;
 
-    if( y % 2 === 0) {
+    if(y % 2 === 0) {
 
         console.log('even');
     }
@@ -40,5 +46,6 @@ function evenOrOdd(){
         console.log('odd');
     }
 
-
 }
+
+
